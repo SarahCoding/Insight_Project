@@ -25,9 +25,17 @@ from sklearn.metrics import confusion_matrix, classification_report,accuracy_sco
 #Study data
 tweets=pd.read_csv('election_day_tweets.csv')
 tweets.head
-print(tweets.columns.values)
-tweets_clean=tweets[['text', 'created_at', 'geo', 'lang', 'place', 'coordinates',
-                     'user.followers_count', 'user.location', 'user.geo_enabled',
+tweets.columns
+tweets_clean=tweets[['text', 'created_at', 'geo', 'lang', 'place', 
+                     'coordinates', 'user.followers_count', 
+                     'user.location', 'user.geo_enabled', 
                      'id', 'favorite_count', 'retweet_count']]
 
+tweets_clean.columns
 tweets_clean.head
+
+#Using only geo enabled tweets
+geo_true=tweets['user.geo_enabled']==True
+tweets_geo=tweets_clean[geo_true]
+isalabama=tweets_geo['user.location']=='Alabama'
+alabama_tweets=tweets_geo[alabama_tweets]
