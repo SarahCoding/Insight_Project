@@ -85,7 +85,6 @@ def speech_scraper(website):
     os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\data\cleaned")
     speechdata.to_csv("speechdata_" + str(candidate_name) +"_"+ str(date) + ".csv")  
     filename=("speechdata_" + str(candidate_name) +"_"+ str(date) + ".csv")
-       return filename
    
     def topic_analysis(filename):
         df_scraped=pd.read_csv(filename) 
