@@ -55,7 +55,7 @@ stop_words.extend(['like', 'from', 'subject', 're', 'edu', 'use'])
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
-website="https://www.presidency.ucsb.edu/documents/remarks-des-moines-following-the-iowa-caucus-1"
+#website="https://www.presidency.ucsb.edu/documents/remarks-des-moines-following-the-iowa-caucus-1"
 
 #Scrape website for speech
  
@@ -83,46 +83,30 @@ def speech_scraper(website):
     speechdata.columns=['candidate', 'date', 'text']
     
     os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\data\cleaned")
-    #speechdata.to_csv("speechdata_" + str(candidate_name) +"_"+ str(date) + ".csv")  
+    speechdata.to_csv("speechdata_" + str(candidate_name) +"_"+ str(date) + ".csv")  
     filename=("speechdata_" + str(candidate_name) +"_"+ str(date) + ".csv")
    
-    def topic_analysis(filename):
-        df_scraped=pd.read_csv(filename) 
-        df_scraped_clean = speechdata.replace('\n',' ', regex=True)
-        df_scraped_clean.to_csv("speechdata_" + str(candidate_name) +"_"+ str(date) + ".csv")  
-      
-        print(df_scraped_clean)
-        df=df_scraped_clean['text']
-        print(df_scraped.head)
-        # Convert to list
-        data = df.values.tolist()
-        # Remove Emails
-        data = [re.sub('\S*@\S*\s?', '', sent) for sent in df]
-        # Remove new line characters
-        data = [re.sub('\s+', ' ', sent) for sent in data]
-        #data = [re.sub('\n', '', sent) for sent in data]
-        # Remove distracting single quotes
-        data = [re.sub("\'", "", sent) for sent in df]
-        pprint(data[:1])
+os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\data\cleaned")
+#debate_corpus taken from "debate_corpus_script1.py" only using 2015-2016 data
+all_text=((debate_corpus)[['text']])
+data=', '.join(all_text.text)
+
         
-        def sent_to_words(sentences):
-            for sentence in sentences:
-                yield(gensim.utils.simple_preprocess(str(sentence), deacc=True))  # deacc=True removes punctuations
+def sent_to_words(sentences):
+    for sentence in sentences:
+        yield(gensim.utils.simple_preprocess(str(sentence), deacc=True))  # deacc=True removes punctuations
         
-        data_words = list(sent_to_words(data))
+data_words = list(sent_to_words(all_text))
+# Build the bigram and trigram models
+bigram = gensim.models.Phrases(data_words, min_count=5, threshold=100) # higher threshold fewer phrases.
+trigram = gensim.models.Phrases(bigram[data_words], threshold=100)  
         
-        print(data_words[:1])
+# Faster way to get a sentence clubbed as a trigram/bigram
+bigram_mod = gensim.models.phrases.Phraser(bigram)
+trigram_mod = gensim.models.phrases.Phraser(trigram)
         
-        # Build the bigram and trigram models
-        bigram = gensim.models.Phrases(data_words, min_count=5, threshold=100) # higher threshold fewer phrases.
-        trigram = gensim.models.Phrases(bigram[data_words], threshold=100)  
-        
-        # Faster way to get a sentence clubbed as a trigram/bigram
-        bigram_mod = gensim.models.phrases.Phraser(bigram)
-        trigram_mod = gensim.models.phrases.Phraser(trigram)
-        
-        # See trigram example
-        print(trigram_mod[bigram_mod[data_words[0]]])
+# See trigram example
+print(trigram_mod[bigram_mod[data_words[0]]])
         
         # Define functions for stopwords, bigrams, trigrams and lemmatization
         def remove_stopwords(texts):
@@ -235,3 +219,4 @@ def speech_scraper(website):
     
 
 
+        

@@ -1,27 +1,27 @@
-library(shiny)
-library(leaflet)
-
-library(leaflet)
-library(maps)
-
-
-setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/data/cleaned")
-
-tweets=read.csv("tweet_data_clean_newyork_Bernie Sanders _.csv")
-
-tweets_boston=nrow(tweets[which(tweets$"State"=="boston"),])
-tweets_newyork=nrow(tweets[which(tweets$"State"=="newyork"),])
-
-tweets$lat[tweets$State=="boston"]=-71.058
-tweets$lng[tweets$State=="boston"]=42.360
-
-map <- leaflet(width = 400, height = 400)
-map <- addTiles(map)
-map <- setView(map, lng = -73,
-               lat = 41,
-               zoom = 6)
-r_colors <- rgb(t(col2rgb(colors()) / 255))
-names(r_colors) <- colors()
+  library(shiny)
+  library(leaflet)
+  
+  library(leaflet)
+  library(maps)
+  
+  
+  setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/data/cleaned")
+  
+  tweets=read.csv("tweet_data_clean_newyork_Bernie Sanders _.csv")
+  
+  tweets_boston=nrow(tweets[which(tweets$"State"=="boston"),])
+  tweets_newyork=nrow(tweets[which(tweets$"State"=="newyork"),])
+  
+  tweets$lat[tweets$State=="boston"]=-71.058
+  tweets$lng[tweets$State=="boston"]=42.360
+  
+  map <- leaflet(width = 400, height = 400)
+  map <- addTiles(map)
+  map <- setView(map, lng = -73,
+                 lat = 41,
+                 zoom = 6)
+  r_colors <- rgb(t(col2rgb(colors()) / 255))
+  names(r_colors) <- colors()
 
 
 ui = fluidPage(
