@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan 20 15:19:07 2020
+Created on Tue Feb  4 09:40:43 2020
 
 @author: sarah
 """
@@ -46,5 +46,3 @@ tweet_data_clean = concat_jsons[['State','timestamp', 'tweet_id',
     tweet_data_clean.to_csv("tweet_data_clean_" + str(state)+ "_"+str(candidate_name) +"_"+ ".csv")  
 
 
-
-    

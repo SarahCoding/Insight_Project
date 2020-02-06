@@ -1,6 +1,14 @@
-#App deployment
+<html>
 
-setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/Debate_resonator/")
+<head>
+<title>Title</title>
+</head>
+
+<body>
+
+<p>This is an R HTML document. When you click the <b>Knit HTML</b> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+<!--begin.rcode
 library(dplyr)
 library(leaflet)
 library(maps)
@@ -8,11 +16,12 @@ library(Rcpp)
 library(rsconnect)
 library(shiny)
 library(tidyr)
-
-sconnect::setAccountInfo(name='sarahcoding', token='0FBD24670D53516D9A94DA892DEF8FBC', secret='zVjk5Bc2xNliBrOialxeh/XENbgIjTo8nVvwUOtM')
-#rsconnect::deployApp('C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/')
+  
+#rsconnect::setAccountInfo(name='sarahcoding', token='0FBD24670D53516D9A94DA892DEF8FBC', secret='zVjk5Bc2xNliBrOialxeh/XENbgIjTo8nVvwUOtM')
+#rsconnect::deployApp('C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/Debate_resonator_deploy.Rhtml')
 
 #data pull and clean
+setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/data/cleaned")
 tweets_Debate_20191220=read.csv("Tweets_Debate_20191220.csv")
 missing=as.data.frame(read.csv("missing_cleaned_values_debate_20191220.csv")[1:3])
 main_data=tweets_Debate_20191220[,c("State", "Candidate", "cos")]
@@ -51,23 +60,23 @@ lat2=as.data.frame(unique(dataclean$lat))
 
 
 ##webapp
-ui <-fluidPage(
+ui = fluidPage(
   titlePanel("Debate Reactor"),
   sidebarLayout(
-    sidebarPanel(
-      helpText("Create maps ranking twitter reaction by state following debates."),
-      selectInput("candidate",
-                  label = "Choose a candidate to display",
-                  choices = c( "Joe Biden"="Biden", 
-                               "Pete Buttigieg"="Buttigieg",
-                               "Amy Klobuchar"="Klobuchar", 
-                               "Bernie Sanders"="Sanders",
-                               "Tom Steyer"="Steyer",
-                               "Elizabeth Warren"="Warren",
-                               "Andrew Yang"="Yang"),
-                  selected = "Candidate"),
-      dateInput("date", label = h3("Date of debate"), value = "2019-12-20")),
-    hr()),
+  sidebarPanel(
+    helpText("Create maps ranking twitter reaction by state following debates."),
+    selectInput("candidate",
+                label = "Choose a candidate to display",
+                choices = c( "Joe Biden"="Biden", 
+                            "Pete Buttigieg"="Buttigieg",
+                            "Amy Klobuchar"="Klobuchar", 
+                            "Bernie Sanders"="Sanders",
+                            "Tom Steyer"="Steyer",
+                            "Elizabeth Warren"="Warren",
+                            "Andrew Yang"="Yang"),
+                selected = "Candidate"),
+  dateInput("date", label = h3("Date of debate"), value = "2019-12-20")),
+  hr()),
   mainPanel(
     textOutput("candidate_selected"),
     leafletOutput("map"),
@@ -89,12 +98,18 @@ server <- function(input, output) {
     leaflet(df,width = 400, height = 400 ) %>% addTiles() %>%
       addCircles(lng = ~lng, lat = ~lat, weight = 1,
                  radius = ~score * 30000, popup = paste( "Debate resonated #",data=rank(-(subset(dataclean$norm_cos,
-                                                                                                 dataclean$Candidate==input$candidate)), ties.method = "last"),
-                                                         "among 11 swing states" )
-                 
+                                           dataclean$Candidate==input$candidate)), ties.method = "last"),
+                                           "among 11 swing states" )
+                
       )
     
   })
 }
 
 shinyApp(ui, server)
+
+  end.rcode-->
+
+
+</body>
+</html>

@@ -1,35 +1,26 @@
-library(shiny)
-library(leaflet)
-library(Rcpp)
-library(maps)
 
+#Debate_20191220 resonatory deploy
 library(dplyr)
+library(leaflet)
+library(maps)
+library(Rcpp)
+library(rsconnect)
+library(shiny)
 library(tidyr)
-  
-setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/data/cleaned")
-  
-tweets_Debate_20191220=read.csv("Tweets_Debate_20191220.csv")
-links=read.csv("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/data/raw/links_to_latest_debates.csv")
-missing=as.data.frame(read.csv("missing_cleaned_values_debate_20191220.csv")[1:3])
 
+#rsconnect::setAccountInfo(name='sarahcoding', token='0FBD24670D53516D9A94DA892DEF8FBC', secret='zVjk5Bc2xNliBrOialxeh/XENbgIjTo8nVvwUOtM')
+#rsconnect::deployApp('C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/Debate_resonator/Debate_twitter_cos_app_withmissing.R')
+
+#setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/Debate_resonator_2/")
+#data pull and clean
+tweets_Debate_20191220=read.csv("Tweets_Debate_20191220.csv")
+missing=as.data.frame(read.csv("missing_cleaned_values_debate_20191220.csv")[1:3])
 main_data=tweets_Debate_20191220[,c("State", "Candidate", "cos")]
 data_full=rbind(missing, main_data)
-
 dataclean=as.data.frame(summarise_at(group_by(data_full,Candidate, State),vars(cos),funs(mean(.,na.rm=TRUE))))
 dataclean$norm_cos=signif(((dataclean$cos)-min(dataclean$cos))/(max(dataclean$cos)-min(dataclean$cos))*100, 2)
 Candidate2=as.data.frame(gsub( "_tw", "", as.character(dataclean$Candidate)))#one time fix
 dataclean$Candidate <- Candidate2 #one time fix
-
-
-
-
-#Some candidates have 0 tweets with debate mention
-#if nrow(as.data.frame(subset(dataclean$State, dataclean$Candidate=="x")))=0 for x in dataclean$Candidate:
-#  then subset(dataclean$Candidate, datadataclean$State=="0"
-#              alldata$Group2[alldata$Group2=="aHYA"]="Young"
-
-
-
 #add geographical information for leaflet below
 #Col Flo Mic Min Nev New Nor Ohi Pen Vir Wis 
 dataclean$lng[dataclean$State=="Col"]=-105.358887
@@ -54,28 +45,29 @@ dataclean$lng[dataclean$State=="Vir"]=-78.6569
 dataclean$lat[dataclean$State=="Vir"]=37.4316
 dataclean$lng[dataclean$State=="Wis"]=-89.500000
 dataclean$lat[dataclean$State=="Wis"]=44.500000
-
-States=as.data.frame(unique(dataclean$State))
+#States=as.data.frame(unique(dataclean$State))
+lng2=as.data.frame(unique(dataclean$lng))
+lat2=as.data.frame(unique(dataclean$lat))
 
 
 ##webapp
-ui = fluidPage(
+ui <-fluidPage(
   titlePanel("Debate Reactor"),
   sidebarLayout(
-  sidebarPanel(
-    helpText("Create maps ranking twitter reaction by state following debates."),
-    selectInput("candidate",
-                label = "Choose a candidate to display",
-                choices = c( "Joe Biden"="Biden", 
-                            "Pete Buttigieg"="Buttigieg",
-                            "Amy Klobuchar"="Klobuchar", 
-                            "Bernie Sanders"="Sanders",
-                            "Tom Steyer"="Steyer",
-                            "Elizabeth Warren"="Warren",
-                            "Andrew Yang"="Yang"),
-                selected = "Candidate"),
-  dateInput("date", label = h3("Date of debate"), value = "2019-12-20")),
-  hr()),
+    sidebarPanel(
+      helpText("Create maps ranking twitter reaction by state following debates."),
+      selectInput("candidate",
+                  label = "Choose a candidate to display",
+                  choices = c( "Joe Biden"="Biden", 
+                               "Pete Buttigieg"="Buttigieg",
+                               "Amy Klobuchar"="Klobuchar", 
+                               "Bernie Sanders"="Sanders",
+                               "Tom Steyer"="Steyer",
+                               "Elizabeth Warren"="Warren",
+                               "Andrew Yang"="Yang"),
+                  selected = "Candidate"),
+      dateInput("date", label = h3("Date of debate"), value = "2019-12-20")),
+    hr()),
   mainPanel(
     textOutput("candidate_selected"),
     leafletOutput("map"),
@@ -83,11 +75,7 @@ ui = fluidPage(
   )
 )
 
-
-lng2=as.data.frame(unique(dataclean$lng))
-lat2=as.data.frame(unique(dataclean$lat))
-
-server <- function(input, output) {
+server <- function(input, output, session) {
   
   output$candidate_selected <- renderText({ 
     paste("Twitter engagement for", input$candidate, "for debate on",
@@ -101,19 +89,12 @@ server <- function(input, output) {
     leaflet(df,width = 400, height = 400 ) %>% addTiles() %>%
       addCircles(lng = ~lng, lat = ~lat, weight = 1,
                  radius = ~score * 30000, popup = paste( "Debate resonated #",data=rank(-(subset(dataclean$norm_cos,
-                                           dataclean$Candidate==input$candidate)), ties.method = "last"),
-                                           "among 11 swing states" )
-                
+                                                                                                 dataclean$Candidate==input$candidate)), ties.method = "last"),
+                                                         "among 11 swing states" )
+                 
       )
     
   })
 }
 
 shinyApp(ui, server)
-
-  
-#Col Flo Mic Min Nev New Nor Ohi Pen Vir Wis 
-#167 289 456 409 284 372  48 321 176 214  20
-
-
-

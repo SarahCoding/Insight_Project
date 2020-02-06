@@ -1,6 +1,4 @@
-#App deployment
-
-setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/Debate_resonator/")
+#Debate_20191220 resonatory deploy
 library(dplyr)
 library(leaflet)
 library(maps)
@@ -9,9 +7,10 @@ library(rsconnect)
 library(shiny)
 library(tidyr)
 
-sconnect::setAccountInfo(name='sarahcoding', token='0FBD24670D53516D9A94DA892DEF8FBC', secret='zVjk5Bc2xNliBrOialxeh/XENbgIjTo8nVvwUOtM')
-#rsconnect::deployApp('C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/')
+rsconnect::setAccountInfo(name='sarahcoding', token='0FBD24670D53516D9A94DA892DEF8FBC', secret='zVjk5Bc2xNliBrOialxeh/XENbgIjTo8nVvwUOtM')
+#rsconnect::deployApp('C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/Debate_resonator/Debate_twitter_cos_app_withmissing.R')
 
+setwd("C:/Users/sarah/Dropbox/Insight_fellowship/Project/Directory/notebooks/shinyapp/Debate_resonator/")
 #data pull and clean
 tweets_Debate_20191220=read.csv("Tweets_Debate_20191220.csv")
 missing=as.data.frame(read.csv("missing_cleaned_values_debate_20191220.csv")[1:3])
