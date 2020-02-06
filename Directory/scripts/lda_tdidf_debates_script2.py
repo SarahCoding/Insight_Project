@@ -24,7 +24,7 @@ import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 nltk.download('wordnet')
 from gensim import corpora, models
-
+from joblib import dump
 
 #Collecting all the websites needed to build a corpus of debates
 website="https://www.presidency.ucsb.edu/documents/presidential-documents-archive-guidebook/presidential-candidates-debates-1960-2016"
@@ -236,6 +236,10 @@ for i in range(len(bow_doc_30)):
 lda_model = gensim.models.LdaMulticore(bow_corpus, num_topics=20, id2word=dictionary, passes=2, workers=2)
 for idx, topic in lda_model.print_topics(-1):
     print('Topic: {} \nWords: {}'.format(idx, topic))
+ 
+#Save model   
+os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\scripts")
+dump(lda_model, "LDA_MODEL_40DebateCorpus.joblib")    
     
 for debate_number in range(40):
     print("This is debate number:", debate_number)
@@ -245,6 +249,18 @@ for debate_number in range(40):
 with open('out.txt', 'w') as f:
     print >> f, 'Filename:', filename
     print('Filename:', filename, file=f) 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #tfidf
