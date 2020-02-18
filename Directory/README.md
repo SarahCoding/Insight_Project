@@ -1,4 +1,4 @@
-# Project Title
+# Political Reactor
 
 This repository contains the codebase for Political Reactor: how far does your message go?. Political Reactor displays measures of social media reaction to the latest political event and maps the distribution of this reaction across the United States. 
 
@@ -11,31 +11,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 Python - numpy, pandas, matplotlib, tf-idf, gensim, nltk, scikit-learn, os, json, glob, pyLDAvis, logging, beautifulsoup
 R - ggplot, cran, maps, RShiny, rsconnect, car, stringr, multcomp, stats
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
@@ -61,14 +36,6 @@ RShiny webapp
 ## Deployment
 
 This app runs on an RShiny server.
-
-## Built With
-
-
-## Contributing
-
-
-## Versioning
 
 
 ## Authors

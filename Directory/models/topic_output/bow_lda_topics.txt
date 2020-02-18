@@ -1,0 +1,368 @@
+This is debate number: 0
+
+Score: 0.743972897529602	 
+Topic: 0.015*"latino" + 0.012*"facebook" + 0.011*"cuba" + 0.010*"mail" + 0.007*"email" + 0.007*"overthrow" + 0.006*"vermont" + 0.006*"classifi" + 0.006*"assad" + 0.006*"coal" + 0.006*"barrier" + 0.006*"clip" + 0.006*"puerto" + 0.006*"regim" + 0.006*"hispan" + 0.005*"kennedi" + 0.005*"miami" + 0.005*"univis" + 0.005*"revolut" + 0.005*"insult"
+
+Score: 0.13603417575359344	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+
+Score: 0.05877772346138954	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+
+Score: 0.04857318475842476	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+
+Score: 0.011162926442921162	 
+Topic: 0.018*"bash" + 0.012*"islam" + 0.010*"zone" + 0.009*"gonna" + 0.009*"assad" + 0.008*"syrian" + 0.007*"caliph" + 0.006*"turkey" + 0.006*"bomb" + 0.006*"dana" + 0.006*"wolf" + 0.005*"arab" + 0.005*"privaci" + 0.005*"sunni" + 0.004*"bernardino" + 0.004*"draft" + 0.004*"christian" + 0.004*"ideolog" + 0.004*"bell" + 0.004*"bulli"
+This is debate number: 1
+
+Score: 0.998294472694397	 
+Topic: 0.029*"rubio" + 0.025*"fiorina" + 0.021*"paul" + 0.009*"christi" + 0.008*"gonna" + 0.007*"bash" + 0.006*"tremend" + 0.006*"zone" + 0.006*"advantag" + 0.006*"audit" + 0.005*"flat" + 0.005*"unknown" + 0.005*"cheer" + 0.005*"jake" + 0.005*"websit" + 0.005*"dana" + 0.005*"assad" + 0.005*"steal" + 0.005*"segment" + 0.004*"deficit"
+This is debate number: 2
+
+Score: 0.9991094470024109	 
+Topic: 0.194*"penc" + 0.021*"foundat" + 0.012*"virginia" + 0.010*"indiana" + 0.009*"gentlemen" + 0.008*"scott" + 0.008*"insult" + 0.008*"bias" + 0.007*"mexican" + 0.007*"ukrain" + 0.007*"mike" + 0.006*"syrian" + 0.006*"zone" + 0.006*"tragedi" + 0.006*"prais" + 0.005*"punish" + 0.005*"abort" + 0.005*"allianc" + 0.005*"alien" + 0.005*"surg"
+This is debate number: 3
+
+Score: 0.46723100543022156	 
+Topic: 0.067*"cuomo" + 0.013*"chris" + 0.010*"rourk" + 0.008*"castro" + 0.008*"bash" + 0.006*"vermont" + 0.006*"farm" + 0.006*"beto" + 0.005*"cheer" + 0.005*"barrier" + 0.005*"ryan" + 0.005*"gaza" + 0.005*"greed" + 0.004*"shop" + 0.004*"nato" + 0.004*"rural" + 0.004*"parenthood" + 0.003*"brooklyn" + 0.003*"concentr" + 0.003*"punish"
+
+Score: 0.38011813163757324	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+
+Score: 0.06694895029067993	 
+Topic: 0.015*"latino" + 0.012*"facebook" + 0.011*"cuba" + 0.010*"mail" + 0.007*"email" + 0.007*"overthrow" + 0.006*"vermont" + 0.006*"classifi" + 0.006*"assad" + 0.006*"coal" + 0.006*"barrier" + 0.006*"clip" + 0.006*"puerto" + 0.006*"regim" + 0.006*"hispan" + 0.005*"kennedi" + 0.005*"miami" + 0.005*"univis" + 0.005*"revolut" + 0.005*"insult"
+
+Score: 0.046716395765542984	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.03784891963005066	 
+Topic: 0.078*"jake" + 0.049*"bash" + 0.045*"dana" + 0.032*"castro" + 0.010*"impeach" + 0.009*"detroit" + 0.007*"eric" + 0.007*"flint" + 0.006*"garner" + 0.006*"nafta" + 0.005*"math" + 0.005*"detent" + 0.005*"crowd" + 0.005*"asylum" + 0.004*"district" + 0.004*"betray" + 0.004*"hyde" + 0.004*"copay" + 0.004*"proceed" + 0.004*"facil"
+This is debate number: 4
+
+Score: 0.9983066916465759	 
+Topic: 0.015*"latino" + 0.012*"facebook" + 0.011*"cuba" + 0.010*"mail" + 0.007*"email" + 0.007*"overthrow" + 0.006*"vermont" + 0.006*"classifi" + 0.006*"assad" + 0.006*"coal" + 0.006*"barrier" + 0.006*"clip" + 0.006*"puerto" + 0.006*"regim" + 0.006*"hispan" + 0.005*"kennedi" + 0.005*"miami" + 0.005*"univis" + 0.005*"revolut" + 0.005*"insult"
+This is debate number: 5
+
+Score: 0.9986223578453064	 
+Topic: 0.018*"eric" + 0.016*"flint" + 0.008*"steve" + 0.007*"divers" + 0.006*"detroit" + 0.006*"export" + 0.006*"asylum" + 0.005*"wade" + 0.005*"racist" + 0.005*"system" + 0.005*"reproduct" + 0.005*"greed" + 0.005*"abort" + 0.005*"colorado" + 0.005*"februari" + 0.004*"approv" + 0.004*"vermont" + 0.004*"racism" + 0.004*"mcconnel" + 0.004*"digniti"
+This is debate number: 6
+
+Score: 0.7242090702056885	 
+Topic: 0.015*"latino" + 0.012*"facebook" + 0.011*"cuba" + 0.010*"mail" + 0.007*"email" + 0.007*"overthrow" + 0.006*"vermont" + 0.006*"classifi" + 0.006*"assad" + 0.006*"coal" + 0.006*"barrier" + 0.006*"clip" + 0.006*"puerto" + 0.006*"regim" + 0.006*"hispan" + 0.005*"kennedi" + 0.005*"miami" + 0.005*"univis" + 0.005*"revolut" + 0.005*"insult"
+
+Score: 0.1270819455385208	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+
+Score: 0.10530830919742584	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+
+Score: 0.0418301522731781	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+This is debate number: 7
+
+Score: 0.6811078786849976	 
+Topic: 0.018*"bash" + 0.012*"islam" + 0.010*"zone" + 0.009*"gonna" + 0.009*"assad" + 0.008*"syrian" + 0.007*"caliph" + 0.006*"turkey" + 0.006*"bomb" + 0.006*"dana" + 0.006*"wolf" + 0.005*"arab" + 0.005*"privaci" + 0.005*"sunni" + 0.004*"bernardino" + 0.004*"draft" + 0.004*"christian" + 0.004*"ideolog" + 0.004*"bell" + 0.004*"bulli"
+
+Score: 0.3172663152217865	 
+Topic: 0.015*"latino" + 0.012*"facebook" + 0.011*"cuba" + 0.010*"mail" + 0.007*"email" + 0.007*"overthrow" + 0.006*"vermont" + 0.006*"classifi" + 0.006*"assad" + 0.006*"coal" + 0.006*"barrier" + 0.006*"clip" + 0.006*"puerto" + 0.006*"regim" + 0.006*"hispan" + 0.005*"kennedi" + 0.005*"miami" + 0.005*"univis" + 0.005*"revolut" + 0.005*"insult"
+This is debate number: 8
+
+Score: 0.9987399578094482	 
+Topic: 0.067*"cuomo" + 0.013*"chris" + 0.010*"rourk" + 0.008*"castro" + 0.008*"bash" + 0.006*"vermont" + 0.006*"farm" + 0.006*"beto" + 0.005*"cheer" + 0.005*"barrier" + 0.005*"ryan" + 0.005*"gaza" + 0.005*"greed" + 0.004*"shop" + 0.004*"nato" + 0.004*"rural" + 0.004*"parenthood" + 0.003*"brooklyn" + 0.003*"concentr" + 0.003*"punish"
+This is debate number: 9
+
+Score: 0.7753622531890869	 
+Topic: 0.018*"bash" + 0.012*"islam" + 0.010*"zone" + 0.009*"gonna" + 0.009*"assad" + 0.008*"syrian" + 0.007*"caliph" + 0.006*"turkey" + 0.006*"bomb" + 0.006*"dana" + 0.006*"wolf" + 0.005*"arab" + 0.005*"privaci" + 0.005*"sunni" + 0.004*"bernardino" + 0.004*"draft" + 0.004*"christian" + 0.004*"ideolog" + 0.004*"bell" + 0.004*"bulli"
+
+Score: 0.14256452023983002	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.05468032509088516	 
+Topic: 0.018*"eric" + 0.016*"flint" + 0.008*"steve" + 0.007*"divers" + 0.006*"detroit" + 0.006*"export" + 0.006*"asylum" + 0.005*"wade" + 0.005*"racist" + 0.005*"system" + 0.005*"reproduct" + 0.005*"greed" + 0.005*"abort" + 0.005*"colorado" + 0.005*"februari" + 0.004*"approv" + 0.004*"vermont" + 0.004*"racism" + 0.004*"mcconnel" + 0.004*"digniti"
+
+Score: 0.025966426357626915	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+This is debate number: 10
+
+Score: 0.7918796539306641	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.20698566734790802	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 11
+
+Score: 0.998388946056366	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+This is debate number: 12
+
+Score: 0.51568204164505	 
+Topic: 0.018*"bash" + 0.012*"islam" + 0.010*"zone" + 0.009*"gonna" + 0.009*"assad" + 0.008*"syrian" + 0.007*"caliph" + 0.006*"turkey" + 0.006*"bomb" + 0.006*"dana" + 0.006*"wolf" + 0.005*"arab" + 0.005*"privaci" + 0.005*"sunni" + 0.004*"bernardino" + 0.004*"draft" + 0.004*"christian" + 0.004*"ideolog" + 0.004*"bell" + 0.004*"bulli"
+
+Score: 0.2092723548412323	 
+Topic: 0.012*"rourk" + 0.010*"bash" + 0.008*"dana" + 0.006*"rural" + 0.006*"assad" + 0.005*"beto" + 0.005*"impeach" + 0.005*"jake" + 0.005*"vietnam" + 0.005*"revolut" + 0.004*"facebook" + 0.004*"castro" + 0.004*"gonna" + 0.004*"libya" + 0.004*"rubio" + 0.004*"credibl" + 0.004*"baltimor" + 0.004*"nevada" + 0.003*"regret" + 0.003*"marin"
+
+Score: 0.11387424170970917	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+
+Score: 0.09038067609071732	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.06988649815320969	 
+Topic: 0.015*"latino" + 0.012*"facebook" + 0.011*"cuba" + 0.010*"mail" + 0.007*"email" + 0.007*"overthrow" + 0.006*"vermont" + 0.006*"classifi" + 0.006*"assad" + 0.006*"coal" + 0.006*"barrier" + 0.006*"clip" + 0.006*"puerto" + 0.006*"regim" + 0.006*"hispan" + 0.005*"kennedi" + 0.005*"miami" + 0.005*"univis" + 0.005*"revolut" + 0.005*"insult"
+This is debate number: 13
+
+Score: 0.9393938183784485	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+
+Score: 0.05966337397694588	 
+Topic: 0.048*"jake" + 0.032*"bash" + 0.028*"dana" + 0.023*"rourk" + 0.014*"ryan" + 0.014*"steve" + 0.013*"beto" + 0.011*"detroit" + 0.007*"rubio" + 0.006*"castro" + 0.006*"tariff" + 0.005*"racism" + 0.005*"flint" + 0.005*"impeach" + 0.005*"kick" + 0.004*"decrimin" + 0.004*"rural" + 0.004*"math" + 0.004*"clarif" + 0.003*"miami"
+This is debate number: 14
+
+Score: 0.9989307522773743	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+This is debate number: 15
+
+Score: 0.9992188215255737	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+This is debate number: 16
+
+Score: 0.9987128973007202	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+This is debate number: 17
+
+Score: 0.5706756114959717	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.4274539649486542	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+This is debate number: 18
+
+Score: 0.4289582073688507	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+
+Score: 0.36260414123535156	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.20750431716442108	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+This is debate number: 19
+
+Score: 0.5127238035202026	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+
+Score: 0.47268620133399963	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+
+Score: 0.013691836036741734	 
+Topic: 0.018*"eric" + 0.016*"flint" + 0.008*"steve" + 0.007*"divers" + 0.006*"detroit" + 0.006*"export" + 0.006*"asylum" + 0.005*"wade" + 0.005*"racist" + 0.005*"system" + 0.005*"reproduct" + 0.005*"greed" + 0.005*"abort" + 0.005*"colorado" + 0.005*"februari" + 0.004*"approv" + 0.004*"vermont" + 0.004*"racism" + 0.004*"mcconnel" + 0.004*"digniti"
+This is debate number: 20
+
+Score: 0.530333936214447	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+
+Score: 0.36519601941108704	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.10374793410301208	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+This is debate number: 21
+
+Score: 0.8047749996185303	 
+Topic: 0.029*"rubio" + 0.025*"fiorina" + 0.021*"paul" + 0.009*"christi" + 0.008*"gonna" + 0.007*"bash" + 0.006*"tremend" + 0.006*"zone" + 0.006*"advantag" + 0.006*"audit" + 0.005*"flat" + 0.005*"unknown" + 0.005*"cheer" + 0.005*"jake" + 0.005*"websit" + 0.005*"dana" + 0.005*"assad" + 0.005*"steal" + 0.005*"segment" + 0.004*"deficit"
+
+Score: 0.194061741232872	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+This is debate number: 22
+
+Score: 0.9988783597946167	 
+Topic: 0.029*"rubio" + 0.025*"fiorina" + 0.021*"paul" + 0.009*"christi" + 0.008*"gonna" + 0.007*"bash" + 0.006*"tremend" + 0.006*"zone" + 0.006*"advantag" + 0.006*"audit" + 0.005*"flat" + 0.005*"unknown" + 0.005*"cheer" + 0.005*"jake" + 0.005*"websit" + 0.005*"dana" + 0.005*"assad" + 0.005*"steal" + 0.005*"segment" + 0.004*"deficit"
+This is debate number: 23
+
+Score: 0.9993666410446167	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+This is debate number: 24
+
+Score: 0.9625967741012573	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+
+Score: 0.02652859315276146	 
+Topic: 0.063*"rubio" + 0.014*"bash" + 0.011*"bell" + 0.011*"ring" + 0.007*"gentlemen" + 0.007*"wolf" + 0.007*"religi" + 0.006*"hispan" + 0.006*"libya" + 0.006*"cheer" + 0.006*"audit" + 0.005*"kerri" + 0.005*"amnesti" + 0.005*"palestinian" + 0.005*"assad" + 0.004*"tremend" + 0.004*"chris" + 0.004*"christi" + 0.004*"tariff" + 0.004*"islam"
+This is debate number: 25
+
+Score: 0.9972250461578369	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+This is debate number: 26
+
+Score: 0.9522773027420044	 
+Topic: 0.025*"rubio" + 0.017*"fiorina" + 0.015*"paul" + 0.012*"ring" + 0.012*"bell" + 0.010*"islam" + 0.010*"christi" + 0.008*"assad" + 0.006*"bash" + 0.006*"libya" + 0.005*"chris" + 0.005*"cheer" + 0.005*"bomb" + 0.005*"arab" + 0.004*"sunni" + 0.004*"abort" + 0.004*"jersey" + 0.004*"jihadist" + 0.004*"bernardino" + 0.004*"syrian"
+
+Score: 0.04516664519906044	 
+Topic: 0.018*"eric" + 0.016*"flint" + 0.008*"steve" + 0.007*"divers" + 0.006*"detroit" + 0.006*"export" + 0.006*"asylum" + 0.005*"wade" + 0.005*"racist" + 0.005*"system" + 0.005*"reproduct" + 0.005*"greed" + 0.005*"abort" + 0.005*"colorado" + 0.005*"februari" + 0.004*"approv" + 0.004*"vermont" + 0.004*"racism" + 0.004*"mcconnel" + 0.004*"digniti"
+This is debate number: 27
+
+Score: 0.9987333416938782	 
+Topic: 0.018*"bash" + 0.012*"islam" + 0.010*"zone" + 0.009*"gonna" + 0.009*"assad" + 0.008*"syrian" + 0.007*"caliph" + 0.006*"turkey" + 0.006*"bomb" + 0.006*"dana" + 0.006*"wolf" + 0.005*"arab" + 0.005*"privaci" + 0.005*"sunni" + 0.004*"bernardino" + 0.004*"draft" + 0.004*"christian" + 0.004*"ideolog" + 0.004*"bell" + 0.004*"bulli"
+This is debate number: 28
+
+Score: 0.9979439973831177	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+This is debate number: 29
+
+Score: 0.9973107576370239	 
+Topic: 0.014*"colorado" + 0.013*"male" + 0.010*"shrink" + 0.009*"gonna" + 0.008*"louisiana" + 0.008*"rubio" + 0.007*"paul" + 0.006*"flat" + 0.006*"export" + 0.006*"deficit" + 0.006*"gentlemen" + 0.006*"rick" + 0.005*"bash" + 0.005*"intend" + 0.005*"oversea" + 0.005*"hack" + 0.005*"holiday" + 0.005*"pollut" + 0.005*"consolid" + 0.004*"cyber"
+This is debate number: 30
+
+Score: 0.9713801741600037	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+
+Score: 0.027019603177905083	 
+Topic: 0.078*"jake" + 0.049*"bash" + 0.045*"dana" + 0.032*"castro" + 0.010*"impeach" + 0.009*"detroit" + 0.007*"eric" + 0.007*"flint" + 0.006*"garner" + 0.006*"nafta" + 0.005*"math" + 0.005*"detent" + 0.005*"crowd" + 0.005*"asylum" + 0.004*"district" + 0.004*"betray" + 0.004*"hyde" + 0.004*"copay" + 0.004*"proceed" + 0.004*"facil"
+This is debate number: 31
+
+Score: 0.5447214245796204	 
+Topic: 0.036*"christi" + 0.027*"rubio" + 0.022*"paul" + 0.021*"fiorina" + 0.012*"jake" + 0.012*"bash" + 0.010*"jersey" + 0.009*"islam" + 0.009*"chris" + 0.008*"parenthood" + 0.008*"amnesti" + 0.007*"assad" + 0.006*"dana" + 0.006*"bomb" + 0.005*"louisiana" + 0.005*"abort" + 0.005*"religi" + 0.005*"welfar" + 0.004*"arab" + 0.004*"veto"
+
+Score: 0.4533291459083557	 
+Topic: 0.019*"rubio" + 0.013*"paul" + 0.011*"abort" + 0.009*"fiorina" + 0.008*"christi" + 0.008*"parenthood" + 0.007*"amnesti" + 0.007*"religi" + 0.007*"facebook" + 0.007*"chris" + 0.006*"jake" + 0.006*"gentlemen" + 0.005*"bash" + 0.005*"cleveland" + 0.005*"gonna" + 0.005*"islam" + 0.005*"bell" + 0.004*"welfar" + 0.004*"assad" + 0.004*"louisiana"
+This is debate number: 32
+
+Score: 0.8808346390724182	 
+Topic: 0.012*"gift" + 0.010*"forgiv" + 0.008*"dreamer" + 0.008*"impeach" + 0.007*"millionair" + 0.007*"hong" + 0.006*"latino" + 0.006*"guantanamo" + 0.006*"childcar" + 0.005*"normal" + 0.005*"disturb" + 0.005*"kong" + 0.005*"opinion" + 0.005*"detent" + 0.005*"borrow" + 0.004*"integr" + 0.004*"rural" + 0.004*"midwest" + 0.004*"failur" + 0.004*"repar"
+
+Score: 0.11806991696357727	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 33
+
+Score: 0.998799741268158	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 34
+
+Score: 0.9993117451667786	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 35
+
+Score: 0.6212574243545532	 
+Topic: 0.021*"dana" + 0.020*"jake" + 0.020*"rourk" + 0.019*"bash" + 0.017*"castro" + 0.015*"beto" + 0.014*"racism" + 0.014*"tariff" + 0.010*"steve" + 0.008*"flint" + 0.007*"paso" + 0.006*"ryan" + 0.006*"system" + 0.006*"detroit" + 0.005*"racist" + 0.005*"profession" + 0.004*"segreg" + 0.004*"resili" + 0.004*"canada" + 0.004*"diseas"
+
+Score: 0.3779403865337372	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 36
+
+Score: 0.9990882873535156	 
+Topic: 0.078*"jake" + 0.049*"bash" + 0.045*"dana" + 0.032*"castro" + 0.010*"impeach" + 0.009*"detroit" + 0.007*"eric" + 0.007*"flint" + 0.006*"garner" + 0.006*"nafta" + 0.005*"math" + 0.005*"detent" + 0.005*"crowd" + 0.005*"asylum" + 0.004*"district" + 0.004*"betray" + 0.004*"hyde" + 0.004*"copay" + 0.004*"proceed" + 0.004*"facil"
+This is debate number: 37
+
+Score: 0.7963453531265259	 
+Topic: 0.048*"jake" + 0.032*"bash" + 0.028*"dana" + 0.023*"rourk" + 0.014*"ryan" + 0.014*"steve" + 0.013*"beto" + 0.011*"detroit" + 0.007*"rubio" + 0.006*"castro" + 0.006*"tariff" + 0.005*"racism" + 0.005*"flint" + 0.005*"impeach" + 0.005*"kick" + 0.004*"decrimin" + 0.004*"rural" + 0.004*"math" + 0.004*"clarif" + 0.003*"miami"
+
+Score: 0.1462377905845642	 
+Topic: 0.068*"jake" + 0.042*"dana" + 0.031*"bash" + 0.021*"rourk" + 0.019*"castro" + 0.018*"beto" + 0.017*"ryan" + 0.011*"steve" + 0.010*"detroit" + 0.006*"flint" + 0.006*"rubio" + 0.005*"asylum" + 0.005*"impeach" + 0.004*"math" + 0.004*"rural" + 0.004*"racism" + 0.004*"giant" + 0.004*"decrimin" + 0.003*"tariff" + 0.003*"realist"
+
+Score: 0.029920188710093498	 
+Topic: 0.049*"rourk" + 0.042*"ryan" + 0.030*"beto" + 0.029*"castro" + 0.013*"jake" + 0.013*"steve" + 0.012*"bash" + 0.010*"dana" + 0.009*"mitch" + 0.009*"mcconnel" + 0.008*"miami" + 0.007*"asylum" + 0.007*"giant" + 0.007*"section" + 0.006*"elector" + 0.006*"taliban" + 0.005*"approv" + 0.005*"pharma" + 0.004*"latino" + 0.004*"rang"
+
+Score: 0.026812557131052017	 
+Topic: 0.021*"dana" + 0.020*"jake" + 0.020*"rourk" + 0.019*"bash" + 0.017*"castro" + 0.015*"beto" + 0.014*"racism" + 0.014*"tariff" + 0.010*"steve" + 0.008*"flint" + 0.007*"paso" + 0.006*"ryan" + 0.006*"system" + 0.006*"detroit" + 0.005*"racist" + 0.005*"profession" + 0.004*"segreg" + 0.004*"resili" + 0.004*"canada" + 0.004*"diseas"
+This is debate number: 38
+
+Score: 0.9987514615058899	 
+Topic: 0.018*"eric" + 0.016*"flint" + 0.008*"steve" + 0.007*"divers" + 0.006*"detroit" + 0.006*"export" + 0.006*"asylum" + 0.005*"wade" + 0.005*"racist" + 0.005*"system" + 0.005*"reproduct" + 0.005*"greed" + 0.005*"abort" + 0.005*"colorado" + 0.005*"februari" + 0.004*"approv" + 0.004*"vermont" + 0.004*"racism" + 0.004*"mcconnel" + 0.004*"digniti"
+This is debate number: 39
+
+Score: 0.9988809823989868	 
+Topic: 0.049*"rourk" + 0.042*"ryan" + 0.030*"beto" + 0.029*"castro" + 0.013*"jake" + 0.013*"steve" + 0.012*"bash" + 0.010*"dana" + 0.009*"mitch" + 0.009*"mcconnel" + 0.008*"miami" + 0.007*"asylum" + 0.007*"giant" + 0.007*"section" + 0.006*"elector" + 0.006*"taliban" + 0.005*"approv" + 0.005*"pharma" + 0.004*"latino" + 0.004*"rang"
+This is debate number: 40
+
+Score: 0.8808349967002869	 
+Topic: 0.012*"gift" + 0.010*"forgiv" + 0.008*"dreamer" + 0.008*"impeach" + 0.007*"millionair" + 0.007*"hong" + 0.006*"latino" + 0.006*"guantanamo" + 0.006*"childcar" + 0.005*"normal" + 0.005*"disturb" + 0.005*"kong" + 0.005*"opinion" + 0.005*"detent" + 0.005*"borrow" + 0.004*"integr" + 0.004*"rural" + 0.004*"midwest" + 0.004*"failur" + 0.004*"repar"
+
+Score: 0.11806958168745041	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 41
+
+Score: 0.998799741268158	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 42
+
+Score: 0.9993117451667786	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 43
+
+Score: 0.621246337890625	 
+Topic: 0.021*"dana" + 0.020*"jake" + 0.020*"rourk" + 0.019*"bash" + 0.017*"castro" + 0.015*"beto" + 0.014*"racism" + 0.014*"tariff" + 0.010*"steve" + 0.008*"flint" + 0.007*"paso" + 0.006*"ryan" + 0.006*"system" + 0.006*"detroit" + 0.005*"racist" + 0.005*"profession" + 0.004*"segreg" + 0.004*"resili" + 0.004*"canada" + 0.004*"diseas"
+
+Score: 0.3779515027999878	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 44
+
+Score: 0.9990882873535156	 
+Topic: 0.078*"jake" + 0.049*"bash" + 0.045*"dana" + 0.032*"castro" + 0.010*"impeach" + 0.009*"detroit" + 0.007*"eric" + 0.007*"flint" + 0.006*"garner" + 0.006*"nafta" + 0.005*"math" + 0.005*"detent" + 0.005*"crowd" + 0.005*"asylum" + 0.004*"district" + 0.004*"betray" + 0.004*"hyde" + 0.004*"copay" + 0.004*"proceed" + 0.004*"facil"
+This is debate number: 45
+
+Score: 0.8026838898658752	 
+Topic: 0.048*"jake" + 0.032*"bash" + 0.028*"dana" + 0.023*"rourk" + 0.014*"ryan" + 0.014*"steve" + 0.013*"beto" + 0.011*"detroit" + 0.007*"rubio" + 0.006*"castro" + 0.006*"tariff" + 0.005*"racism" + 0.005*"flint" + 0.005*"impeach" + 0.005*"kick" + 0.004*"decrimin" + 0.004*"rural" + 0.004*"math" + 0.004*"clarif" + 0.003*"miami"
+
+Score: 0.13811077177524567	 
+Topic: 0.068*"jake" + 0.042*"dana" + 0.031*"bash" + 0.021*"rourk" + 0.019*"castro" + 0.018*"beto" + 0.017*"ryan" + 0.011*"steve" + 0.010*"detroit" + 0.006*"flint" + 0.006*"rubio" + 0.005*"asylum" + 0.005*"impeach" + 0.004*"math" + 0.004*"rural" + 0.004*"racism" + 0.004*"giant" + 0.004*"decrimin" + 0.003*"tariff" + 0.003*"realist"
+
+Score: 0.031376902014017105	 
+Topic: 0.049*"rourk" + 0.042*"ryan" + 0.030*"beto" + 0.029*"castro" + 0.013*"jake" + 0.013*"steve" + 0.012*"bash" + 0.010*"dana" + 0.009*"mitch" + 0.009*"mcconnel" + 0.008*"miami" + 0.007*"asylum" + 0.007*"giant" + 0.007*"section" + 0.006*"elector" + 0.006*"taliban" + 0.005*"approv" + 0.005*"pharma" + 0.004*"latino" + 0.004*"rang"
+
+Score: 0.027144333347678185	 
+Topic: 0.021*"dana" + 0.020*"jake" + 0.020*"rourk" + 0.019*"bash" + 0.017*"castro" + 0.015*"beto" + 0.014*"racism" + 0.014*"tariff" + 0.010*"steve" + 0.008*"flint" + 0.007*"paso" + 0.006*"ryan" + 0.006*"system" + 0.006*"detroit" + 0.005*"racist" + 0.005*"profession" + 0.004*"segreg" + 0.004*"resili" + 0.004*"canada" + 0.004*"diseas"
+This is debate number: 46
+
+Score: 0.9987514615058899	 
+Topic: 0.018*"eric" + 0.016*"flint" + 0.008*"steve" + 0.007*"divers" + 0.006*"detroit" + 0.006*"export" + 0.006*"asylum" + 0.005*"wade" + 0.005*"racist" + 0.005*"system" + 0.005*"reproduct" + 0.005*"greed" + 0.005*"abort" + 0.005*"colorado" + 0.005*"februari" + 0.004*"approv" + 0.004*"vermont" + 0.004*"racism" + 0.004*"mcconnel" + 0.004*"digniti"
+This is debate number: 47
+
+Score: 0.9988809823989868	 
+Topic: 0.049*"rourk" + 0.042*"ryan" + 0.030*"beto" + 0.029*"castro" + 0.013*"jake" + 0.013*"steve" + 0.012*"bash" + 0.010*"dana" + 0.009*"mitch" + 0.009*"mcconnel" + 0.008*"miami" + 0.007*"asylum" + 0.007*"giant" + 0.007*"section" + 0.006*"elector" + 0.006*"taliban" + 0.005*"approv" + 0.005*"pharma" + 0.004*"latino" + 0.004*"rang"
+This is debate number: 48
+
+Score: 0.880833625793457	 
+Topic: 0.012*"gift" + 0.010*"forgiv" + 0.008*"dreamer" + 0.008*"impeach" + 0.007*"millionair" + 0.007*"hong" + 0.006*"latino" + 0.006*"guantanamo" + 0.006*"childcar" + 0.005*"normal" + 0.005*"disturb" + 0.005*"kong" + 0.005*"opinion" + 0.005*"detent" + 0.005*"borrow" + 0.004*"integr" + 0.004*"rural" + 0.004*"midwest" + 0.004*"failur" + 0.004*"repar"
+
+Score: 0.11807092279195786	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 49
+
+Score: 0.998799741268158	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 50
+
+Score: 0.9993117451667786	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 51
+
+Score: 0.6213354468345642	 
+Topic: 0.021*"dana" + 0.020*"jake" + 0.020*"rourk" + 0.019*"bash" + 0.017*"castro" + 0.015*"beto" + 0.014*"racism" + 0.014*"tariff" + 0.010*"steve" + 0.008*"flint" + 0.007*"paso" + 0.006*"ryan" + 0.006*"system" + 0.006*"detroit" + 0.005*"racist" + 0.005*"profession" + 0.004*"segreg" + 0.004*"resili" + 0.004*"canada" + 0.004*"diseas"
+
+Score: 0.3778623044490814	 
+Topic: 0.020*"rourk" + 0.017*"impeach" + 0.016*"castro" + 0.016*"beto" + 0.006*"childcar" + 0.006*"tech" + 0.005*"regim" + 0.005*"abort" + 0.005*"wade" + 0.004*"ukrain" + 0.004*"paso" + 0.004*"giant" + 0.004*"reproduct" + 0.004*"latino" + 0.004*"opioid" + 0.003*"amazon" + 0.003*"turkey" + 0.003*"revolut" + 0.003*"nato" + 0.003*"rural"
+This is debate number: 52
+
+Score: 0.9990882873535156	 
+Topic: 0.078*"jake" + 0.049*"bash" + 0.045*"dana" + 0.032*"castro" + 0.010*"impeach" + 0.009*"detroit" + 0.007*"eric" + 0.007*"flint" + 0.006*"garner" + 0.006*"nafta" + 0.005*"math" + 0.005*"detent" + 0.005*"crowd" + 0.005*"asylum" + 0.004*"district" + 0.004*"betray" + 0.004*"hyde" + 0.004*"copay" + 0.004*"proceed" + 0.004*"facil"
+This is debate number: 53
+
+Score: 0.7856696844100952	 
+Topic: 0.048*"jake" + 0.032*"bash" + 0.028*"dana" + 0.023*"rourk" + 0.014*"ryan" + 0.014*"steve" + 0.013*"beto" + 0.011*"detroit" + 0.007*"rubio" + 0.006*"castro" + 0.006*"tariff" + 0.005*"racism" + 0.005*"flint" + 0.005*"impeach" + 0.005*"kick" + 0.004*"decrimin" + 0.004*"rural" + 0.004*"math" + 0.004*"clarif" + 0.003*"miami"
+
+Score: 0.15808111429214478	 
+Topic: 0.068*"jake" + 0.042*"dana" + 0.031*"bash" + 0.021*"rourk" + 0.019*"castro" + 0.018*"beto" + 0.017*"ryan" + 0.011*"steve" + 0.010*"detroit" + 0.006*"flint" + 0.006*"rubio" + 0.005*"asylum" + 0.005*"impeach" + 0.004*"math" + 0.004*"rural" + 0.004*"racism" + 0.004*"giant" + 0.004*"decrimin" + 0.003*"tariff" + 0.003*"realist"
+
+Score: 0.028102673590183258	 
+Topic: 0.049*"rourk" + 0.042*"ryan" + 0.030*"beto" + 0.029*"castro" + 0.013*"jake" + 0.013*"steve" + 0.012*"bash" + 0.010*"dana" + 0.009*"mitch" + 0.009*"mcconnel" + 0.008*"miami" + 0.007*"asylum" + 0.007*"giant" + 0.007*"section" + 0.006*"elector" + 0.006*"taliban" + 0.005*"approv" + 0.005*"pharma" + 0.004*"latino" + 0.004*"rang"
+
+Score: 0.02746238000690937	 
+Topic: 0.021*"dana" + 0.020*"jake" + 0.020*"rourk" + 0.019*"bash" + 0.017*"castro" + 0.015*"beto" + 0.014*"racism" + 0.014*"tariff" + 0.010*"steve" + 0.008*"flint" + 0.007*"paso" + 0.006*"ryan" + 0.006*"system" + 0.006*"detroit" + 0.005*"racist" + 0.005*"profession" + 0.004*"segreg" + 0.004*"resili" + 0.004*"canada" + 0.004*"diseas"
+This is debate number: 54
+
+Score: 0.9987514615058899	 
+Topic: 0.018*"eric" + 0.016*"flint" + 0.008*"steve" + 0.007*"divers" + 0.006*"detroit" + 0.006*"export" + 0.006*"asylum" + 0.005*"wade" + 0.005*"racist" + 0.005*"system" + 0.005*"reproduct" + 0.005*"greed" + 0.005*"abort" + 0.005*"colorado" + 0.005*"februari" + 0.004*"approv" + 0.004*"vermont" + 0.004*"racism" + 0.004*"mcconnel" + 0.004*"digniti"
+This is debate number: 55
+
+Score: 0.9988809823989868	 
+Topic: 0.049*"rourk" + 0.042*"ryan" + 0.030*"beto" + 0.029*"castro" + 0.013*"jake" + 0.013*"steve" + 0.012*"bash" + 0.010*"dana" + 0.009*"mitch" + 0.009*"mcconnel" + 0.008*"miami" + 0.007*"asylum" + 0.007*"giant" + 0.007*"section" + 0.006*"elector" + 0.006*"taliban" + 0.005*"approv" + 0.005*"pharma" + 0.004*"latino" + 0.004*"rang"

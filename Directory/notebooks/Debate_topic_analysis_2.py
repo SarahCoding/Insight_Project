@@ -9,27 +9,20 @@ import urllib.request
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
-import csv
 
-
-import gensim
-from gensim.utils import simple_preprocess
-from gensim.parsing.preprocessing import STOPWORDS
-from nltk.stem import WordNetLemmatizer, SnowballStemmer
-from nltk.stem.porter import *
+import re
 import numpy as np
-np.random.seed(2018)
-from gensim.parsing.preprocessing import remove_stopwords
-from nltk.corpus import stopwords
-import nltk
-from nltk.stem.wordnet import WordNetLemmatizer
-nltk.download('wordnet')
-from gensim import corpora, models
-from joblib import dump
+import pandas as pd
+from pprint import pprint
+
+# Gensim
+import gensim
+import gensim.corpora as corpora
+from gensim.utils import simple_preprocess
 from gensim.models import CoherenceModel
 
-from gensim import corpora, models
-from pprint import pprint
+# spacy for lemmatization
+import spacy
 
 # Plotting tools
 import pyLDAvis
@@ -37,7 +30,20 @@ import pyLDAvis.gensim  # don't skip this
 import matplotlib.pyplot as plt
 %matplotlib inline
 
+# Enable logging for gensim - optional
+import logging
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.ERROR)
+
+import warnings
+warnings.filterwarnings("ignore",category=DeprecationWarning)
+
+
+
+
 ###TOPIC MODELLING 
+# NLTK Stop words
+from nltk.corpus import stopwords
+stop_words = stopwords.words('english')
 stop_words = stopwords.words('english')
 stop_words.extend(['Have','kasich', 'cruz', 'like', 'from', 'subject', 're', 'edu', 'use', 'I',
                    'me', 'my', 'I\'ve', 'we', 'people', 'I', 'It', 'Those', 'those','we\'re','I\'ve', 'them', 'they', ' I\'m', 'thank', 'you', 'by', 'of',                  'myself', 'we', 'or', 'ors', 'orselves', 'able', 'your', 'yours',
@@ -114,18 +120,10 @@ stop_words.extend(['Have','kasich', 'cruz', 'like', 'from', 'subject', 're', 'ed
                 'wonder', 'would', 'would\'ve', 'yes', 'yet', 'you', 'your', 'yours', 'yourself', 'yourselves', 'zero',
                 'make', 'didn\'t', 'It\'s','It','look','Look', 'This','We\'ll','And','I\'ve', 
                 'I\'m', 'Donald', 'Trump', 'Amy', 'Klobuchar:', 'Secondly,', 'I’m',
-                'Julian', 'Castro', 'Tim', 'Biden', 'Paul', 'Congressman', 'David',
-                'buttigieg', 'pete', 'klobuchar', 'warren','yang','booker', 'elizabeth', 'lester',
-                'holt', 'jose', 'anderson', 'harris', 'kamala', 'andrew', 'chuck', 'michael',
-                'lindsey', 'david', 'cori', 'vice', 'pence', 'harri', 'harris','ronald','reagan',
-                'tulsi', 'gabbard', 'julian', 'tapper', 'rachel', 'maddow', 'marco',
-                'graham', 'nancy', 'nanci', 'carson', 'anderson', 'cooper', 'congresswoman',
-                'congressman'])
-
-
-os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\data\cleaned")
+                'Julian', 'Castro', 'Tim', 'Biden', 'Paul', 'Congressman', 'David'])
 
 #get debate corpus
+os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\data\cleaned")
 debate_corpus=pd.read_csv("debate_corpus_40.csv")
 print(debate_corpus.participants.unique())
 debate_corpus.head()
@@ -134,136 +132,180 @@ debate_corpus.loc[32]
 # Convert to list
 data = debate_corpus.text.values.tolist()
 
-#data = pd.read_csv('abcnews-date-text.csv', error_bad_lines=False);
-data_text = debate_corpus[['text']]
-#data_text['index'] = data_text.index
-documents = data_text
+# Remove at signs and emails
+data = [re.sub('\S*@\S*\s?', '', sent) for sent in data]
+# Remove new line characters
+data = [re.sub('\s+', ' ', sent) for sent in data]
+data = [re.sub('\n+', ' ', sent) for sent in data]
+# Remove distracting single quotes
+data = [re.sub("\'", "", sent) for sent in data]
+
+print(data[:1])
+
+#Tokenize words and clean up the text
+def sent_to_words(sentences):
+    for sentence in sentences:
+        yield(gensim.utils.simple_preprocess(str(sentence), deacc=True))  # deacc=True removes punctuations
+
+data_words = list(sent_to_words(data))
+
+print(data_words[:1])
+
+# Build the bigram and trigram models
+#bigrams are two words that occur frequently together and trigrams are 3 words
+
+bigram = gensim.models.Phrases(data_words, min_count=5, threshold=100) # higher threshold fewer phrases.
+trigram = gensim.models.Phrases(bigram[data_words], threshold=100)  
+
+# Faster way to get a sentence clubbed as a trigram/bigram
+bigram_mod = gensim.models.phrases.Phraser(bigram)
+trigram_mod = gensim.models.phrases.Phraser(trigram)
+
+# See trigram example
+print(trigram_mod[bigram_mod[data_words[0]]])
 
 
-#print(WordNetLemmatizer().lemmatize('went', pos='v'))
-stemmer = SnowballStemmer('english')
-def lemmatize_stemming(text):
-    return stemmer.stem(WordNetLemmatizer().lemmatize(text, pos='v'))
-
-def preprocess(text):
-    result = []
-    for token in gensim.utils.simple_preprocess(text):
-        if token not in gensim.parsing.preprocessing.STOPWORDS and len(token) > 3:
-            result.append(lemmatize_stemming(token))
-    return result
-
+# Define functions for stopwords, bigrams, trigrams and lemmatization
 def remove_stopwords(texts):
     return [[word for word in simple_preprocess(str(doc)) if word not in stop_words] for doc in texts]
 
+def make_bigrams(texts):
+    return [bigram_mod[doc] for doc in texts]
 
-doc_sample = documents[33:].values[0][0]
-print('original document: ')
-words = []
-for word in doc_sample.split(' '):
-    words.append(word)
-print(words)
-print('\n\n tokenized and lemmatized document: ')
-print(preprocess(doc_sample))
+def make_trigrams(texts):
+    return [trigram_mod[bigram_mod[doc]] for doc in texts]
+
+def lemmatization(texts, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
+    """https://spacy.io/api/annotation"""
+    texts_out = []
+    for sent in texts:
+        doc = nlp(" ".join(sent)) 
+        texts_out.append([token.lemma_ for token in doc if token.pos_ in allowed_postags])
+    return texts_out
+
+# Remove Stop Words
+data_words_nostops = remove_stopwords(data_words)
+
+# Form Bigrams
+data_words_bigrams = make_bigrams(data_words_nostops)
+
+# Initialize spacy 'en' model, keeping only tagger component (for efficiency)
+nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
+
+# Do lemmatization keeping only noun, adj, vb, adv
+data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
+
+print(data_lemmatized[39:40])
+
+# Create Dictionary
+id2word = corpora.Dictionary(data_lemmatized)
+
+# Create Corpus
+texts = data_lemmatized
+
+# Term Document Frequency
+corpus = [id2word.doc2bow(text) for text in texts]
+
+# View
+print(corpus[:1])
+id2word[0]
+[[(id2word[id], freq) for id, freq in cp] for cp in corpus[:1]]
+
+# Build LDA model
+lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
+                                           id2word=id2word,
+                                           num_topics=20, 
+                                           random_state=100,
+                                           update_every=1,
+                                           chunksize=100,
+                                           passes=10,
+                                           alpha='auto',
+                                           per_word_topics=True)
 
 
-processed_docs = documents['text'].map(preprocess)
-print(processed_docs)
-processed_docs_nostopwords = remove_stopwords(processed_docs)
-print(processed_docs_nostopwords)
+# Print the Keyword in the 10 topics
+pprint(lda_model.print_topics())
+doc_lda = lda_model[corpus]
 
-
-dictionary = gensim.corpora.Dictionary(processed_docs_nostopwords)
-count = 0
-for k, v in dictionary.iteritems():
-    print(k, v)
-    count += 1
-    if count > 10:
-        break
-    
-dictionary.filter_extremes(no_below=10, no_above=0.5, keep_n=100000)
-bow_corpus = [dictionary.doc2bow(doc) for doc in processed_docs_nostopwords]
-bow_corpus[32]
-
-bow_doc_32 = bow_corpus[32]
-for i in range(len(bow_doc_32)):
-    print("Word {} (\"{}\") appears {} time.".format(bow_doc_32[i][0], 
-                                               dictionary[bow_doc_32[i][0]], 
-bow_doc_32[i][1]))
-
-
-#back to the model
-tfidf = models.TfidfModel(bow_corpus)
-corpus_tfidf = tfidf[bow_corpus]
-for doc in corpus_tfidf:
-    pprint(doc)
-    break
-
-
-
-#BOW MODEL
-lda_model = gensim.models.LdaMulticore(bow_corpus, num_topics=25, id2word=dictionary, passes=2, workers=2)
-
-for idx, topic in lda_model.print_topics(-1):
-    print('Topic: {} \nWords: {}'.format(idx, topic))
-
-
-for index, score in sorted(lda_model[bow_corpus[33]], key=lambda tup: -1*tup[1]):
+for index, score in sorted(lda_model[corpus[32]], key=lambda tup: -1*tup[1]):
     print("\nScore: {}\t \nTopic: {}".format(score, lda_model.print_topic(index, 10)))
 
 
+# Compute Perplexity
+print('\nPerplexity: ', lda_model.log_perplexity(corpus))  # a measure of how good the model is. lower the better.
 
-#TFIDIF MODEL
-lda_model_tfidf = gensim.models.LdaMulticore(corpus_tfidf, num_topics=20, id2word=dictionary, passes=2, workers=4)
-
-for idx, topic in lda_model_tfidf.print_topics(-1):
-    print('Topic: {} Word: {}'.format(idx, topic))
-
-
-for index, score in sorted(lda_model_tfidf[bow_corpus[32]], key=lambda tup: -1*tup[1]):
-    print("\nScore: {}\t \nTopic: {}".format(score, lda_model_tfidf.print_topic(index, 10)))
-
-
-
-
-#Save model   
-os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\models")
-dump(lda_model, "LDA_MODEL_40DebateCorpus.joblib")    
-dump(lda_model_tfidf, "TFIDF-LDA_MODEL_40DebateCorpus.joblib")    
-
-os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\models\topic_output")
-f = open("bow_lda_topics.txt", "a")#saving to an output file
-#Print topics for bow lda for each debate
-for debate_number in range(56):
-    print("This is debate number:", debate_number, file=f)
-    for index, score in sorted(lda_model[bow_corpus[debate_number]], key=lambda tup: -1*tup[1]):
-        print("\nScore: {}\t \nTopic: {}".format(score, lda_model.print_topic(index, 20)), file=f)
-f.close()
-
-f2 = open("tfidf_lda_topics.txt", "a")
-#Print topics for tfidf lda for each debate
-for debate_number in range(56):
-    print("This is debate number:", debate_number, file=f2)
-    for index, score in sorted(lda_model[bow_corpus[debate_number]], key=lambda tup: -1*tup[1]):
-        print("\nScore: {}\t \nTopic: {}".format(score, lda_model.print_topic(index, 20)), file=f2)
-f2.close()
-
-
-
-#unseen_document = 'How a Pentagon deal became an identity crisis for Google'
-#bow_vector = dictionary.doc2bow(preprocess(unseen_document))
-#for index, score in sorted(lda_model[bow_vector], key=lambda tup: -1*tup[1]):
- #   print("Score: {}\t Topic: {}".format(score, lda_model.print_topic(index, 5)))
-
-
-
-
-#Coherence Score
-coherence_model_lda = CoherenceModel(model=lda_model, texts=processed_docs, dictionary=dictionary, coherence='c_v')
+# Compute Coherence Score
+coherence_model_lda = CoherenceModel(model=lda_model, texts=data_lemmatized, dictionary=id2word, coherence='c_v')
 coherence_lda = coherence_model_lda.get_coherence()
 print('\nCoherence Score: ', coherence_lda)
 
+# Visualize the topics
+pyLDAvis.enable_notebook()
+vis = pyLDAvis.gensim.prepare(lda_model, corpus, id2word)
+vis
 
-#tfidf
+def format_topics_sentences(ldamodel=lda_model, corpus=bow_corpus, texts=data_text):
+    # Init output
+    sent_topics_df = pd.DataFrame()
+
+    # Get main topic in each document
+    for i, row in enumerate(ldamodel[corpus]):
+        row = sorted(row, key=lambda x: (x[1]), reverse=True)
+        # Get the Dominant topic, Perc Contribution and Keywords for each document
+        for j, (topic_num, prop_topic) in enumerate(row):
+            if j == 0:  # => dominant topic
+                wp = ldamodel.show_topic(topic_num)
+                topic_keywords = ", ".join([word for word, prop in wp])
+                sent_topics_df = sent_topics_df.append(pd.Series([int(topic_num), round(prop_topic,4), topic_keywords]), ignore_index=True)
+            else:
+                break
+    sent_topics_df.columns = ['Dominant_Topic', 'Perc_Contribution', 'Topic_Keywords']
+
+    # Add original text to the end of the output
+    contents = pd.Series(texts)
+    sent_topics_df = pd.concat([sent_topics_df, contents], axis=1)
+    return(sent_topics_df)
+
+
+df_topic_sents_keywords = format_topics_sentences(ldamodel=lda_model, corpus=bow_corpus, texts=documents['text'])
+
+# Format
+df_dominant_topic = df_topic_sents_keywords.reset_index()
+df_dominant_topic.columns = ['Document_No', 'Dominant_Topic', 'Topic_Perc_Contrib', 'Keywords', 'Text']
+
+# Show
+df_dominant_topic.head(32)
+os.chdir(r"C:\Users\sarah\Dropbox\Insight_fellowship\Project\Directory\models\topic_output")
+df_dominant_topic_notext = df_dominant_topic[df_dominant_topic.columns[0:3]]
+df_dominant_topic_info=debate_corpus[debate_corpus.columns[1:3]]
+df_dominant_topic_notext_full = pd.concat([df_dominant_topic_notext, df_dominant_topic_info], axis=1, sort=False)
+
+                                 
+                                   
+df_dominant_topic_notext_full.to_csv("Dominant_topic_in_doc_bow_lda_notext.csv")
+
+
+# Number of Documents for Each Topic
+topic_counts = df_topic_sents_keywords['Dominant_Topic'].value_counts()
+
+# Percentage of Documents for Each Topic
+topic_contribution = round(topic_counts/topic_counts.sum(), 4)
+
+# Topic Number and Keywords
+topic_num_keywords = df_topic_sents_keywords[['Dominant_Topic', 'Topic_Keywords']]
+
+# Concatenate Column wise
+df_dominant_topics = pd.concat([topic_num_keywords, topic_counts, topic_contribution], axis=1)
+
+# Change Column names
+df_dominant_topics.columns = ['Dominant_Topic', 'Topic_Keywords', 'Num_Documents', 'Perc_Documents']
+
+# Show
+df_dominant_topics
+df_dominant_topics.to_csv("Dominant_topics_bow_lda.csv")
+
+
+
 def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=3):
     """
     Compute c_v coherence for various number of topics
@@ -284,7 +326,15 @@ def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=3):
     model_list = []
     for num_topics in range(start, limit, step):
         #model = gensim.models.wrappers.LdaMallet(mallet_path, corpus=corpus, num_topics=num_topics, id2word=id2word)
-        model=lda_model_tfidf = gensim.models.LdaMulticore(corpus_tfidf, num_topics=20, id2word=dictionary, passes=2, workers=4)
+        model=lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
+                                           id2word=id2word,
+                                           num_topics=20, 
+                                           random_state=100,
+                                           update_every=1,
+                                           chunksize=100,
+                                           passes=10,
+                                           alpha='auto',
+                                           per_word_topics=True)
         model_list.append(model)
         coherencemodel = CoherenceModel(model=model, texts=texts, dictionary=dictionary, coherence='c_v')
         coherence_values.append(coherencemodel.get_coherence())
@@ -293,7 +343,7 @@ def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=3):
 
 
 # Can take a long time to run.
-model_list, coherence_values = compute_coherence_values(dictionary=dictionary, corpus=corpus_tfidf, texts=processed_docs, start=2, limit=40, step=6)
+model_list, coherence_values = compute_coherence_values(dictionary=id2word, corpus=corpus, texts=data_lemmatized[32:33], start=2, limit=40, step=6)
 
 
 
@@ -309,48 +359,11 @@ plt.show()
 
 
 
-#bow lda
-def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=3):
-    """
-    Compute c_v coherence for various number of topics
-
-    Parameters:
-    ----------
-    dictionary : Gensim dictionary
-    corpus : Gensim corpus
-    texts : List of input texts
-    limit : Max num of topics
-
-    Returns:
-    -------
-    model_list : List of LDA topic models
-    coherence_values : Coherence values corresponding to the LDA model with respective number of topics
-    """
-    coherence_values = []
-    model_list = []
-    for num_topics in range(start, limit, step):
-        #model = gensim.models.wrappers.LdaMallet(mallet_path, corpus=corpus, num_topics=num_topics, id2word=id2word)
-        model=lda_model = gensim.models.LdaMulticore(bow_corpus, num_topics=20, id2word=dictionary, passes=2, workers=2)
-        model_list.append(model)
-        coherencemodel = CoherenceModel(model=model, texts=texts, dictionary=dictionary, coherence='c_v')
-        coherence_values.append(coherencemodel.get_coherence())
-
-    return model_list, coherence_values
-
-
-# Can take a long time to run.
-model_list, coherence_values = compute_coherence_values(dictionary=dictionary, corpus=bow_corpus, texts=processed_docs, start=2, limit=40, step=6)
 
 
 
-# Show graph
-limit=40; start=2; step=6;
-x = range(start, limit, step)
-plt.plot(x, coherence_values)
-plt.xlabel("Num Topics")
-plt.ylabel("Coherence score")
-plt.legend(("coherence_values"), loc='best')
-plt.show()
+
+
 
 
 

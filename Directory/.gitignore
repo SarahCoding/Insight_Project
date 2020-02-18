@@ -2,4 +2,7 @@
 *.csv
 =======
 *.csv
+
+*archives*
+/data
 >>>>>>> fd7d5a0df2e824aca5643935def087b48be714ca
